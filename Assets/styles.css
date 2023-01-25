@@ -354,6 +354,10 @@ footer {
     font-size: 1em;
   }
 
+  .projects > h1 {
+    font-size: 2rem;
+  }
+
   .proj-details p {
     font-size: 1em;
   }
@@ -389,6 +393,10 @@ footer {
     width: 240px;
     height: 40px;
     padding: 8px;
+  }
+
+  .projects > h1 {
+    font-size: 3rem;
   }
 
   .projects-container {

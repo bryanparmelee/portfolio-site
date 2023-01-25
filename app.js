@@ -5,6 +5,7 @@ const navigation = document.querySelector(".navigation");
 const navLink = document.querySelectorAll(".nav-link");
 const navbar = document.querySelector(".navbar");
 const projectsContainer = document.querySelector(".projects-container");
+const year = document.querySelector(".year");
 
 burger.addEventListener("click", () => {
   navigation.style.display = navigation.style.display === 'none' ? 'flex' : 'none';
@@ -68,3 +69,5 @@ const showProjects = () => {
 }
 
 showProjects();
+
+year.textContent = new Date().getFullYear();
