@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
     <link rel="stylesheet" href="./Assets/styles.css" />
 
     <title>Bryan Parmelee, Developer</title>
 
     <nav class="navbar">
-      <h1>_//BP</h1>
+      <h1><a href="./">_//BP</a></h1>
       <ul class="navigation">
-        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Work</a></li>
         <li>
           <a href="mailto:bryan.parmelee@gmail.com" class="nav-link">Contact</a>
         </li>
@@ -23,39 +26,74 @@
         </li>
       </ul>
       <button class="burger-menu" id="burger-menu">
-     <img src="./Assets/menu-icon.png">
+        <ion-icon name="menu-outline" size="large"></ion-icon>
       </button>
     </nav>
   </head>
 
   <body>
 
-    <section class="hero" id="about">
+    <section class="hero">
       <div class="bio">
-        <div class="hello">
-          <p>hello there. i'm</p>
-          <h2 class="bio-title">BRYAN PARMELEE</h2>
-        </div>
-        <div class="role">
-        <p>
-          a <span class="bio-text">FRONT-END DEVELOPER</span> based in Vermont.
-        </p>
-        <img class='role-img' src="./Assets/Images/bp-profile-300.jpg" alt="Bryan Parmelee">
-      </div>
-        <p>
-          I enjoy learning new technologies almost as much as I enjoy using them to build responsive websites and web apps.  
-        </p>
+              
+          <p><span class="alt-text">hello there. i'm</span> </p>
+         
+          <h1 class="bio-title">Bryan Parmelee,</h1>
+     
+          <p class="right"><span class="alt-text">a</span> <span class="bio-text right">front-end developer</span> 
+            <br>
+            <span class="alt-text">  based in Vermont.</span></p>
+         <br>
+          <p class="right"><span class="alt-text">
+          I enjoy learning new technologies almost as much as I enjoy using them to build responsive websites and web apps. </span>
+          </p>
       </div>
 
       <div class="hero-img">
-        <img
-          src="./Assets/Images/bp-profile-300.jpg"
-          alt="Bryan Parmelee"
-        />
-        <a href="mailto:bryan.parmelee@gmail.com">
-          <div class="btn">Say Hello</div>
-        </a>
+        <div class="img-bg">
+          <img   
+            src="./Assets/Images/Subject.png"
+            alt="Bryan Parmelee"
+          />
+        </div>
 
+        <div class="hello">
+          <p>Let's connect!</p>
+          <div class="hello-btns">
+            <a href="mailto:bryan.parmelee@gmail.com">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+            <a href="https://github.com/bryanparmelee">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/bryanparmelee/">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://twitter.com/bryan_parmelee">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="skills">
+      <h1>_//SKILLS</h1>
+      <div>
+        <i class="icon devicon-tailwindcss-plain"></i>
+        <i class="icon devicon-html5-plain"></i>
+        <i class="icon devicon-css3-plain"></i>
+        <i class="icon devicon-javascript-plain"></i>
+        <i class="icon devicon-react-original"></i>
+        <i class="icon devicon-git-plain"></i>
+        <i class="icon devicon-sass-original"></i>
+        <i class="icon devicon-babel-plain"></i>
+        <i class="icon devicon-firebase-plain"></i>
+        <i class="icon devicon-graphql-plain"></i>
+        <i class="icon devicon-jest-plain"></i>
+        <i class="icon devicon-photoshop-plain"></i>
+        <i class="icon devicon-premierepro-plain"></i>
       </div>
     </section>
 
@@ -71,8 +109,9 @@
       <p class="copy"><a href="https://github.com/bryanparmelee/portfolio-site" target="blank">Copyright &copy; <span class="year"></span> Bryan Parmelee</a></p>
     </footer>
 
-
-    <script type="module" src="./app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="./script.js"></script>
 
   </body>
 </html>
