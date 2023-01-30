@@ -30,6 +30,7 @@ html {
   scroll-behavior: smooth;
   font-size: 100%;
   background-color: #aff2d8;
+  scrollbar-width: none;
 }
 
 *, *::before, *::after {
@@ -42,7 +43,13 @@ body {
   font-family: var(--font-family);
   color: var(--primary-color);
   background: var(--bg-gradient);
+  -ms-overflow-style: none;
 }
+
+body::-webkit-scrollbar {
+  width: 0 !important
+  }
+
                  
 .navbar {
   width: 100%;
@@ -121,7 +128,7 @@ section {
 }
 
 .bio {
-  max-width: 50%;
+  max-width: 40%;
   overflow: visible;
   padding: 10px;
   
@@ -151,7 +158,22 @@ section {
   text-align: end;
 }
 
+.half {
+  padding-left: 50%;
+}
 
+.skill-list {
+  font-size: 0.8rem;
+
+  padding-left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill > li {
+  text-transform: uppercase;
+}
 
 .hero-img {
 
@@ -198,6 +220,11 @@ section {
 
 ion-icon {
   font-size: 24px;
+  transition: transform 500ms ease-out 0.25s;
+}
+
+a:hover > ion-icon {
+  transform: translateY(-15%);
 }
 
 .icon {
@@ -236,8 +263,8 @@ ion-icon {
 }
 
 .projects {
-  height: 100%;
-  padding: 10px;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -249,27 +276,50 @@ ion-icon {
   margin-top: 40px;
   padding: 10px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 .project-card {
-  width: 100%;
+  /* color: var(--bg-color); */
+  flex-basis: 45%;
   height: 300px;
+  border-radius: 25px;
+  background: linear-gradient(#f492f0, #a18dce);
+
   transition-duration: 0.5s;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  box-shadow: var(--primary-shadow);
+  box-shadow: var(--primary-shadow); 
 }
 
-.project-card:hover {
-  scale: 105%;
+.proj-btn {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;  
+  background-color: var(--bg-color);
+  border: 1px solid var(--primary-color);
+  transition: background-color 0.7s ease-in-out;
 }
+
+.proj-btn:hover {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+
+/* .project-card:hover {
+  scale: 105%;
+} */
 
 .project-card:hover .overlay, 
 .project-card:hover .proj-details {
@@ -277,11 +327,13 @@ ion-icon {
 }
 
 .project-card-img {
-  object-fit: cover;
-  height: 100%;
+  max-width: 100%;
+  border-radius: 25px;
+  object-fit: fill;
+  opacity: 0.5;
 }
 
-.overlay {
+/* .overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -289,7 +341,7 @@ ion-icon {
   left: 0;
   background-color: rgba(20, 38, 63, 0.9);
   opacity: 0;
-}
+} */
 
 .proj-details {
   position: absolute;
@@ -302,7 +354,7 @@ ion-icon {
   flex-direction: column;
   justify-content: space-evenly;
   z-index: 100;
-  opacity: 0;
+
 }
 
 .proj-details p {
@@ -311,6 +363,7 @@ ion-icon {
 
 .proj-title {
   font-size: 1.2em;
+  color: var(--bg-color);
 }
 
 
@@ -326,12 +379,14 @@ footer {
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
-  font-size: 1rem;
+  font-size: 0.6rem;
 }
 
 /* Tablet */
 @media only screen and (max-width: 720px) {
-
+  .project-card {
+    flex-basis: 300px;
+  }
 }
 
 /* Mobile */

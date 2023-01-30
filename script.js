@@ -50,8 +50,8 @@ const showProjects = () => {
     } = project;
    
     html += "<div class='project-card' id=" + id + ">";
-    html += "<img class='project-card-img' src='" + image + "' alt='" + title + "'>";
-    html += "<div class='overlay'></div>";
+    // html += "<img class='project-card-img' src='" + image + "' alt='" + title + "'>";
+    // html += "<div class='overlay'></div>";
     html += "<div class='proj-details'>"
     html += "<a href='" + liveUrl + "'><div class='proj-title'>"
     html += "<h2>" + title + "</h2>";
@@ -59,8 +59,8 @@ const showProjects = () => {
     html += "<p class='project-desciption'>" + description + "</p>";
     html += "<p class='secondary-font'>" + tech + "</p>";
     html += "<div class='proj-btns'>"
-    html += "<a href='" + codeUrl + "' target='blank'><div class='btn'>View Code</div></a>";
-    html += "<a href='" + liveUrl + "' target='blank'><div class='btn'>View Live</div></a>";
+    html += "<a href='" + codeUrl + "' target='blank'><div class='proj-btn'>GitHub <ion-icon name='code-slash-outline'></ion-icon></div></a>";
+    html += "<a href='" + liveUrl + "' target='blank'><div class='proj-btn'>Live Site <ion-icon name='open-outline'></ion-icon></div></a>";
     html += "</div>";
     html += "</div>";
     html += "</div>";
