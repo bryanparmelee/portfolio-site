@@ -28,7 +28,7 @@ const PROJECT_DATA = [
     },
     {
         id: 'wedding',
-        title: 'My Wedding Website',
+        title: 'Wedding Website',
         image: './Assets/Images/wedding.jpg',
         liveUrl: 'https://parmecitto.com/',
         codeUrl: 'https://github.com/bryanparmelee/wedding-website',
