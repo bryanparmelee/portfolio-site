@@ -2,39 +2,22 @@ import PROJECT_DATA from "./project-data.js";
 
 const burger = document.querySelector(".burger-menu");
 const navigation = document.querySelector(".navigation");
+const mobileNav = document.querySelector(".mobile-nav");
 const navLink = document.querySelectorAll(".nav-link");
 const navbar = document.querySelector(".navbar");
 const projectsContainer = document.querySelector(".projects-container");
 const year = document.querySelector(".year");
 
 burger.addEventListener("click", () => {
-  navigation.style.display = navigation.style.display === 'none' ? 'flex' : 'none';
+  mobileNav.classList.toggle("hide");
 });
 
 navLink.forEach((link) =>
   link.addEventListener("click", () => {
-    navigation.style.display = 'none';
+    mobileNav.classList.toggle("hide");
   })
 );
 
-window.addEventListener('resize', () => {
-  if (window.innerWidth >= 480) {
-    navigation.style.display = 'flex';
-  } else {
-    navigation.style.display = 'none';
-  }
-})
-
-let lastScrollTop = 0;
-window.onscroll = () => {
-  let scrollTop = window.scrollY || document.documentElement.scrollTop;
-  if (scrollTop > lastScrollTop) {
-    navbar.style.top = "-60px";
-  } else {
-    navbar.style.top = "0";
-  }
-  lastScrollTop = scrollTop;
-};
 
 const showProjects = () => {
   let html = '';

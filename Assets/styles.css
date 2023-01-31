@@ -89,13 +89,31 @@ nav a:hover {
 }
 
 nav ul {
-  display: flex;
   gap: 2rem;
 }
 
 
 .navigation {
   display: flex;
+}
+
+.mobile-nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 10;
+  background: rgba(133, 131, 203, 0.8);
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
+.hide {
+  display: none;
 }
 
 .nav-link {
@@ -360,7 +378,21 @@ footer {
 
 /* Tablet */
 @media only screen and (max-width: 720px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
 
+  nav ul {
+    gap: 1rem;
+  }
+
+  .half {
+    padding-left: 10%;
+  }
+
+  .img-bg {
+    width: 200px;
+  }
 }
 
 /* Mobile */
@@ -370,17 +402,7 @@ footer {
   }
 
   .navigation {
-    width: 100%;
-    height: auto;
     display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    background: rgba(133, 131, 203, 0.8);
-    backdrop-filter: saturate(180%) blur(10px);
   }
 
   .hero {
