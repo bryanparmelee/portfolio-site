@@ -256,14 +256,24 @@ a:hover > ion-icon {
 
 .skills-container {
   padding-top: 2rem;
-  max-width: 600px;
+  max-width: 800px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 20px
- 
+  gap: 20px;
+  transform: translateY(10vh);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: visibility; 
+}
+
+.skills-container.show-skills {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
 .skill-card {
@@ -324,6 +334,17 @@ a:hover > ion-icon {
   position: relative;
   padding: 20px;
   box-shadow: var(--primary-shadow); 
+  transform: translateY(10vh);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: visibility;
+}
+
+.project-card.show-proj {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
 .project-card a:hover {
