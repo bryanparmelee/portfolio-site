@@ -1,5 +1,14 @@
 const PROJECT_DATA = [
     {
+        id: 'netflix-clone',
+        title: 'Netflix Clone',
+        image: './Assets/Images/testflix.jpg',
+        liveUrl: 'https://netflix-clone-bp.netlify.app/',
+        codeUrl: 'https://github.com/bryanparmelee/netflix-clone',
+        tech: 'React, Tailwind CSS, The Movie Database API',
+        description: 'A failthful clone of the Netflix home page including their category slider with progress indicator and hover effect. Uses the Movie Database API to ensure the featured movies are updated on each visit.',
+    },
+    {
         id: 'deal-loft',
         title: 'Deal Loft',
         image: './Assets/Images/deal-loft.jpg',
@@ -16,15 +25,6 @@ const PROJECT_DATA = [
         codeUrl: 'https://github.com/bryanparmelee/goals-i-might-have-missed',
         tech: 'React, Sass, Score Bat API',
         description: 'So many soccer games, so little time. This site uses the ScoreBat API to gather highlight videos from recent matches in the biggest leagues.',
-    },
-    {
-        id: 'testflix',
-        title: 'Testflix',
-        image: './Assets/Images/testflix.jpg',
-        liveUrl: 'https://test-flix.netlify.app/',
-        codeUrl: 'https://github.com/bryanparmelee/testflix',
-        tech: 'React, CSS, The Movie Database API',
-        description: 'This site shows visitors the synopsis and rating of recent films using the Movie Database API. Allows users to search the database for earlier films.',
     },
     {
         id: 'wedding',

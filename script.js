@@ -61,7 +61,7 @@ function checkLocation() {
   let height = window.innerHeight;
   let skillsRect = skillsContainer.getBoundingClientRect();
   let skillsHeight = skillsRect.y;
-  if(height / 2 > skillsHeight) {
+  if(height / 1.5 > skillsHeight) {
     skillsContainer.classList.add("show-skills");
   }
   if (0 - height > skillsHeight || height < skillsHeight) {
@@ -71,7 +71,7 @@ function checkLocation() {
   projectCards.forEach((card, i) => {
     let rect = card.getBoundingClientRect();
     let cardHeight = rect.y;
-    if (height / 2 > cardHeight) {      
+    if (height / 1.5 > cardHeight) {      
       card.classList.add("show-proj");
     } 
     if (0 - height > cardHeight || height < cardHeight) {
