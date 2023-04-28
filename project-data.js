@@ -1,5 +1,15 @@
 const PROJECT_DATA = [
   {
+    id: "gear-wishlist",
+    title: "The Gear Wishlist",
+    image: "./Assets/Images/deal-loft.jpg",
+    liveUrl: "https://gear-wishlist.up.railway.app/",
+    codeUrl: "https://github.com/bryanparmelee/express-inventory-app",
+    tech: "Node.js, Mongo DB, PUG, Firebase, CSS",
+    description:
+      "The Gear Wishlist is a full-stack Node.js CRUD app built from scratch to keep track of musical gear I'd like to add to the collection someday. The app uses a Mongo DB database as well as Google Firebase for image uploads.",
+  },
+  {
     id: "deal-loft",
     title: "Deal Loft",
     image: "./Assets/Images/deal-loft.jpg",
