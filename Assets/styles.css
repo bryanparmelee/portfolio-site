@@ -124,15 +124,23 @@ nav ul {
   display: none;
 }
 
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
 section {
-  min-height: 100vh;
   width: 100%;
   padding: 8px;
   padding-bottom: 20px;
 }
 
 .hero {
-  width: 100%;
+  max-width: 1000px;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -140,7 +148,7 @@ section {
 }
 
 .bio {
-  max-width: 40%;
+  max-width: 400px;
   overflow: visible;
   padding: 10px;
 }
@@ -190,7 +198,7 @@ section {
 .img-bg {
   width: 240px;
   background-color: var(--alt-color);
-  padding-top: 60px;
+  padding-top: 50px;
   border-radius: 120px 120px 120px 120px;
   transition: background-color 1s ease-in-out 0.25s;
 }
@@ -202,7 +210,7 @@ section {
 .img-bg > img {
   max-width: 100%;
   border-radius: 0 0 120px 120px;
-  transform: translateY(2%);
+  transform: translateY(3%);
 }
 
 .hello {
@@ -236,7 +244,7 @@ a:hover > ion-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
+  /* padding: 40px; */
 }
 
 .skills-container {
@@ -415,6 +423,7 @@ footer {
 
   .bio {
     max-width: 100%;
+    padding: 10px;
   }
 
   .bio-title {
