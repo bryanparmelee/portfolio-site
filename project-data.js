@@ -1,5 +1,15 @@
 const PROJECT_DATA = [
   {
+    id: "image-resizer",
+    title: "Image Resizer",
+    image: "./Assets/Images/image-resizer.jpg",
+    downloadUrl: "https://bryanparmelee.dev/Assets/Image+Resizer+Installer.dmg",
+    codeUrl: "https://github.com/bryanparmelee/py-images",
+    tech: "Python, PyQt, py2app",
+    description:
+      "Image Resizer is a highly-efficient standalone Mac OS X app to streamline the process of optimizing high resolution photos for the web.",
+  },
+  {
     id: "gear-wishlist",
     title: "The Gear Wishlist",
     image: "./Assets/Images/deal-loft.jpg",
