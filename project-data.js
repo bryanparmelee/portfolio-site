@@ -3,7 +3,7 @@ const PROJECT_DATA = [
     id: "image-resizer",
     title: "Image Resizer",
     image: "./Assets/Images/image-resizer.jpg",
-    downloadUrl: "https://bryanparmelee.dev/Assets/Image+Resizer+Installer.dmg",
+    downloadUrl: "./Assets/Image Resizer Installer.dmg",
     codeUrl: "https://github.com/bryanparmelee/py-images",
     tech: "Python, PyQt, py2app",
     description:
